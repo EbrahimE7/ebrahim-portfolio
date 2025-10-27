@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebrahim Al-Baba</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Pic/logo.png" type="image/png">
+  
+  <!-- مكتبة أيقونات Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="card">
+    <div class="cover">
+      <img id="cover-pic" alt="Facebook Cover">
+    </div>
+
+    <div class="profile">
+      <img id="profile-pic" alt="Ebrahim Al-Baba">
+      <h1>Ebrahim Al-Baba || إبراهيم البابا</h1>
+      <h2>Graphic Designer | مصمم جرافك</h2>
+      <p class="location">Syria - Homs</p>
+      <p class="quote">🌒 (لَا تَقْنَطُوا مِنْ رَحْمَةِ اللَّهِ)</p>
+    </div>
+
+    <div class="social">
+      <a href="https://www.facebook.com/Ebrahim.Taha.AlBaba" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="https://www.instagram.com/ebrahim.albaba" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.threads.net/@ebrahim.albaba" target="_blank">
+        <i class="fab fa-threads"></i> Threads
+      </a>
+      <a href="https://wa.me/963938438992" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://111602159837456764084.sarhne.com" target="_blank">
+        <i class="fas fa-comment-dots"></i> صراحة
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const fbPic = "Pic/pro-pic.jpg";
+    const fbCoverPic = "Pic/pro-cover.jpg";
+    const profilePic = document.getElementById("profile-pic");
+    const coverPic = document.getElementById("cover-pic");
+
+    profilePic.src = fbPic;
+    coverPic.src = fbCoverPic;
+  </script>
+</body>
+</html>

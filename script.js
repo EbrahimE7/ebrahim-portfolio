@@ -8,10 +8,9 @@ shareBtn.addEventListener("click", async () => {
   shareBtn.classList.add("active");
   setTimeout(() => shareBtn.classList.remove("active"), 200);
 
-
   const shareData = {
     title: "Ebrahim Al-Baba",
-    text: "شوف موقعي الشخصي 👇🏻😎",
+    text: "شوف موقعي الشخصي 👇",
     url: window.location.href
   };
 

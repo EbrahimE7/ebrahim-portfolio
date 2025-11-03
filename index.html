@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ebrahim Al-Baba</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="Pic/logo.png" type="image/png">
-  
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -25,34 +24,30 @@
     </div>
 
     <div class="social">
-      <a href="https://www.facebook.com/Ebrahim.Taha.AlBaba" target="_blank">
-        <i class="fab fa-facebook"></i> Facebook
-      </a>
-      <a href="https://www.instagram.com/ebrahim.albaba" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
-      <a href="https://www.threads.net/@ebrahim.albaba" target="_blank">
-        <i class="fab fa-threads"></i> Threads
-      </a>
-      <a href="https://wa.me/963938438992" target="_blank">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-      <a href="https://111602159837456764084.sarhne.com" target="_blank">
-        <i class="fas fa-comment-dots"></i> صراحة
-      </a>
+      <button id="contact-btn"><i class="fas fa-address-book"></i> جهة الاتصال</button>
+      <a href="https://www.facebook.com/Ebrahim.Taha.AlBaba" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.instagram.com/ebrahim.albaba" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.threads.net/@ebrahim.albaba" target="_blank"><i class="fab fa-threads"></i> Threads</a>
+      <a href="https://wa.me/963938438992" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://111602159837456764084.sarhne.com" target="_blank"><i class="fas fa-comment-dots"></i> صراحة</a>
+      <button id="share-btn"><i class="fas fa-share-alt"></i> مشاركة الموقع</button>
+
     </div>
   </div>
 
-  <script>
-    const fbPic = "Pic/pro-pic.jpg";
-    const fbCoverPic = "Pic/pro-cover.jpg";
-    const profilePic = document.getElementById("profile-pic");
-    const coverPic = document.getElementById("cover-pic");
+  <!-- نافذة الاتصال -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <h3>طرق التواصل</h3>
+      <div class="contact-options">
+        <a href="tel:+963938438992"><i class="fas fa-phone"></i> اتصال</a>
+        <a href="https://wa.me/963938438992" target="_blank"><i class="fab fa-whatsapp"></i> واتساب</a>
+        <a href="sms:+963938438992"><i class="fas fa-sms"></i> SMS</a>
+      </div>
+      <button id="close-modal">إغلاق</button>
+    </div>
+  </div>
 
-    profilePic.src = fbPic;
-    coverPic.src = fbCoverPic;
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
